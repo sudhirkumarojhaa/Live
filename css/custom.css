@@ -8,11 +8,17 @@ body {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 li {
     list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .banner {
@@ -60,6 +66,43 @@ li {
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+.down-icon {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    animation: anim 2s linear infinite;
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.08);
+    }
+    50% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.05);
+    }
+    80% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 section {
@@ -121,4 +164,31 @@ section {
     padding: 10px;
     box-shadow: 2px 2px 20px #000;
     border-radius: 10px;
+}
+
+footer {
+    background: url('../img/footer.jpg') no-repeat center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    height: 350px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+.social-icons {
+    font-size: 30px;
+    margin: 100px 0;
+}
+
+.social-icons a:hover {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-left: 30px;
 }
