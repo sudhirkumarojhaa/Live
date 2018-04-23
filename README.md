@@ -1,2 +1,2 @@
 # Live
-Streaming live on sudhirkumar.in
+Streaming live on http://sudhirkumar.in
