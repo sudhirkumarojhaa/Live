@@ -1,117 +1,168 @@
 /* Global css */
 
 body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f8f8f8;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Splash screen css */
 
 .splash-screen {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100vh;
-  background-color: #0c9;
-  opacity: 1;
-  z-index: 1001;
-  display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: #0c9;
+    opacity: 1;
+    z-index: 1001;
+    display: none;
 }
 
 .splash-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .splash-icon {
-  width: 300px;
-  height: 200px;
-  margin-bottom: 100px;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 100px;
 }
 
 .typedText {
-  margin-top: 300px;
+    margin-top: 300px;
 }
 
 /* banner section css starts here */
 
 .banner {
-  height: 100vh;
-  z-index: -1;
-  box-shadow: 0 10px 17px rgba(0,0,0,0.4);
+    height: 100vh;
+    z-index: -1;
+    box-shadow: 0 10px 17px rgba(0, 0, 0, 0.4);
+    position: relative;
 }
 
-.banner::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(20, 30, 90, .5);
-}
+/* .banner::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(169.2deg, rgba(0, 0, 0, 0.5) 90%, rgba(255, 255, 255, 0.5) 90%), linear-gradient(169.2deg, rgba(0, 0, 0, 0.5) 10%, rgba(255, 255, 255, 0.5) 10%);
+} */
 
 .banner-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
 }
 
 .logo {
-  font-size: 45px;
-  text-transform: uppercase;
-  letter-spacing: 20px;
-  color: #fff;
-  text-shadow: 0 0 10px #000;
-  margin: 30px ;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #000;
+    margin: 30px;
 }
 
 .designation {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #999;
-  font-weight: 900;
-  letter-spacing: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 900;
+    letter-spacing: .5px;
 }
 
 /* main content css starts here */
 
 .main-content {
-  margin: 200px 0;
+
+
+    position: relative;
 }
 
-.sidebar {
-  position: relative;
-}
-.title{
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 50px;
-  transform: rotate(-90deg);
-  letter-spacing: 5px;
-  margin-top: 140px;
+.skills .thumbnail {
+    border: 2px solid #000;
+    padding: 10px;
+    height: 400px;
 }
 
-.section-content {
-  background-color: #fff;
-  box-shadow: 0 0 5px rgba(0,0,0,0.4);
-  color: #999;
+.skills .caption {
+    background-color: #000;
+    color: #999;
 }
 
-.first-letter {
-  font-size: 30px;
+.skills .caption .heading {
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.passion img {
+    position: relative;
+    height: 300px;
+}
+
+.second-grid {
+    padding: 35px 0;
+}
+
+.upper-grid {
+    padding-bottom: 20px;
+}
+
+.upper-grid img {
+    height: 140px;
+}
+
+.city-name {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+footer {
+    height: 500px;
+    background-color: #007abf;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wave{
+    width: 100%;
+    z-index: 1;
+    margin-top: -3%;
+    position: relative;
+}
+
+
+@media screen and (max-width: 768px) {
+    .title {
+        transform: rotate(0deg);
+        font-size: 20px;
+        margin-left: 14px;
+    }
+    .main-content {
+        margin: 20px 0;
+    }
 }
