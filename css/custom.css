@@ -1,168 +1,294 @@
-/* Global css */
+@font-face {
+  font-family: "Desire";
+  src: url(../fonts/delight.woff)
+}
 
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f8f8f8;
+  background-color: #fff
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+ul {
+  margin: 0;
+  padding: 0
 }
 
-/* Splash screen css */
-
-.splash-screen {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100vh;
-    background-color: #0c9;
-    opacity: 1;
-    z-index: 1001;
-    display: none;
+li {
+  list-style: none
+}
+p {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
 }
 
-.splash-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+a {
+  color: wheat;
+  text-decoration: none
 }
-
-.splash-icon {
-    width: 300px;
-    height: 200px;
-    margin-bottom: 100px;
-}
-
-.typedText {
-    margin-top: 300px;
-}
-
-/* banner section css starts here */
 
 .banner {
-    height: 100vh;
-    z-index: -1;
-    box-shadow: 0 10px 17px rgba(0, 0, 0, 0.4);
-    position: relative;
+  height: 100vh;
+  background: url(../img/banner-footer.jpg) no-repeat center fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* .banner::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(169.2deg, rgba(0, 0, 0, 0.5) 90%, rgba(255, 255, 255, 0.5) 90%), linear-gradient(169.2deg, rgba(0, 0, 0, 0.5) 10%, rgba(255, 255, 255, 0.5) 10%);
-} */
+.banner::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3)
+}
 
 .banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
+  font-weight: 700;
+  color: #fff
 }
 
-.logo {
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    color: #000;
-    margin: 30px;
+.banner-content .name {
+  font-family: "desire";
+  font-size: 60px;
+  text-align: center;
+  color: #000;
+  text-align: center;
 }
 
-.designation {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #999;
-    font-weight: 900;
-    letter-spacing: .5px;
+.title {
+  font-size: 70px;
+  text-align: center;
+  color: #000;
+  font-size: 90px;
+  text-align: center;
+  color: #110015;
+  text-transform: uppercase;
+  border-bottom: 1px solid wheat;
+  border-top: 1px solid wheat;
+  margin: 50px 0;
 }
 
-/* main content css starts here */
+.sub-title {
+  color: #000;
+  font-size: 16px;
+  text-transform: uppercase;
+}
 
-.main-content {
+.colors {
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-animation: shine 12s linear infinite;
+  -webkit-animation: shine 12s linear infinite;
+  animation: shine 12s linear infinite
+}
 
+.colors.theme-color {
+  background: linear-gradient(to right, #00c2eb 20%, #00ff9c 40%, #00ff9c 60%, #00c2eb 80%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text
+}
 
-    position: relative;
+.down-icon {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  text-align: center;
+  animation: anim 2s linear infinite
+}
+
+@keyframes anim {
+  0% {
+    transform: scale(1)
+  }
+  30% {
+    transform: scale(1)
+  }
+  40% {
+    transform: scale(1.18)
+  }
+  50% {
+    transform: scale(1)
+  }
+  60% {
+    transform: scale(1)
+  }
+  70% {
+    transform: scale(1.25)
+  }
+  80% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
+
+section {
+  padding: 30px 0
+}
+
+.others-grid .thumbnail {
+  margin: 30px;
+  box-shadow: 0 2px 15px #999;
+  transition: all .3s ease-out;
+}
+
+.others-grid .thumbnail:hover {
+  transform: translate(0, -10px);
 }
 
 .skills .thumbnail {
-    border: 2px solid #000;
-    padding: 10px;
-    height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 300px;
+  box-shadow: 0 0 20px #999;
+  position: relative;
+  margin-bottom: 25px
 }
 
-.skills .caption {
-    background-color: #000;
-    color: #999;
+.skills .list {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(29, 106, 154, .9);
+  color: #fff;
+  visibility: hidden;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .2s, visibility .5s
 }
 
-.skills .caption .heading {
-    padding: 10px;
-    text-transform: uppercase;
-    text-align: center;
+.skills .thumbnail:hover .list {
+  visibility: visible;
+  opacity: 1
 }
 
-.passion img {
-    position: relative;
-    height: 300px;
+.skills .icon {
+  font-size: 190px;
+  color: #00c2eb
 }
 
-.second-grid {
-    padding: 35px 0;
+.projects .row {
+  margin: 30px 0
 }
 
-.upper-grid {
-    padding-bottom: 20px;
+.project-title {
+  text-transform: uppercase;
+  color: darkslateblue;
+  font-size: 30px;
+  padding: 30px 0;
+  text-align: center;
+  letter-spacing: 7px;
 }
 
-.upper-grid img {
-    height: 140px;
-}
-
-.city-name {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    font-size: 14px;
-    color: #fff;
-}
-
-footer {
-    height: 500px;
-    background-color: #007abf;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.wave{
-    width: 100%;
-    z-index: 1;
-    margin-top: -3%;
-    position: relative;
+.projects .caption {
+  padding: 30px;
+  margin: 30px;
 }
 
 
-@media screen and (max-width: 768px) {
-    .title {
-        transform: rotate(0deg);
-        font-size: 20px;
-        margin-left: 14px;
-    }
-    .main-content {
-        margin: 20px 0;
-    }
+.projects .thumbnail {
+  padding: 10px;
+  box-shadow: 0 0 20px #999;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #0c9;
+  margin: 10px 0;
+  width: 40px;
+  height: 40px;
+  margin: 3px;
+  border: 2px solid #0c9;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.social-icons a:hover {
+  text-decoration: none;
+  color: #000;
+  background-color: #0c9;
+  box-shadow: 2px 2px 11px rgba(201, 52, 52, 0)
+}
+
+.digit {
+  position: absolute;
+  top: 90px;
+  transform: rotate(-90deg);
+  color: #000;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  right: 10px;
+}
+
+.copyright {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  background-color: #000;
+  color: #0c9;
+  padding: 20px 40px;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+.connect {
+  background: url(../img/banner-footer.jpg) no-repeat center fixed;
+}
+
+.connect .thumbnail {
+  margin: 15px;
+  height: 300px;
+  box-shadow: 0 2px 15px #999;
+  transition: all .3s ease-out;
+  border: 15px solid #000;
+  background-color: #fff;
+  background-image: linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+}
+
+.connect .thumbnail:hover {
+  transform: translate(0, -10px);
+  transition: all 1.4s;
+}
+
+.tech {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(0, 40, 86);
+  padding: 10px ;
+  text-align: center;
+}
+
+.connect .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
 }
