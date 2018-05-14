@@ -1,12 +1,12 @@
 
 //splash screen js
 
-$(".splash-screen").show();
+$(".splash").show();
 
 setTimeout(function () {
-  $(".splash-screen").fadeOut();
+  $(".splash").fadeOut();
   $("body").show(300);
-}, 100);
+}, 1500);
 
 //Splash screen text js
 var aText = new Array(
@@ -90,3 +90,5 @@ $(document).scroll(function() {
     $('.affix').hide();
   }
 });
+
+

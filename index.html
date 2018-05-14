@@ -11,27 +11,40 @@
   <link rel="stylesheet" href="css/story.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/mediaquery.css">
 </head>
 
 <body>
+  <div class="splash">
+    <div class="loader">
+      <img src="img/gear.gif">
+    </div>
+  </div>
   <section class="banner">
-    <div class="banner-content" data-sb="fadeInDownBig" data-sb-hide="fadeOutUp">
+    <div class="banner-content">
       <h1 class="name">sudhir kumar</h1>
       <h2 class="sub-title">Front End Developer /
         <span class="colors theme-color"> Designer</span>
       </h2>
+      <img src="img/header.png" alt=" banner-footer">
     </div>
-    <div class="down-icon">
-      <a href="#portfolio">
-        <i class="fas fa-angle-double-down"></i>
-      </a>
-    </div>
-    <div class="digit">27.10.1992</div>
+    <img src="img/wave2.png" alt="" class="wave">
   </section>
 
   <!-- banner ends -->
 
-  <section class="portfolio container" id="portfolio">
+
+  <section class="portfolio ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/p.png" alt="">
+        </div>
+        <div class="col-md-6">
+          <img src="img/ass.png" alt="">
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -47,8 +60,7 @@
           <div class="thumbnail">
             <i class="far fa-lightbulb icon"></i>
             <ul class="list">
-              <li>Web Development</li>
-              <li>Hybrid Mobile Development</li>
+              <li>Web/Hybrid Apps Development</li>
             </ul>
           </div>
         </div>
@@ -67,6 +79,7 @@
     </div>
   </section>
 
+
   <section class="projects container">
     <div class="portfolio-content" data-sb="bounceInRight" data-sb-hide="fadeOutUp">
       <h2 class="title">Projects</h2>
@@ -74,17 +87,17 @@
         research, wireframing, design &amp; development. This process allows me to create great product with client goals&nbsp;in&nbsp;mind.</p>
     </div>
     <div class="container-fluid">
-      <div class="row sb-effect-displayed animated rotateInDownLeft" data-sb="rotateInDownLeft" data-sb-hide="fadeOutUp">
+      <div class="row">
         <div class="col-md-12">
           <div class="thumbnail">
             <img src="img/india.png" alt="">
           </div>
           <div class="caption">
             <h1 class="project-title">india</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus libero ullam aperiam eligendi quisquam illo
-              pariatur accusantium consequuntur animi sequi quam ducimus iste, officiis tempora harum! Cupiditate tempore
-              minus nam?</p>
-            <a href=""></a>
+            <p>This project was a one page website template buit using bootstrap and HTML 5 , implemented a video tag and animation
+              to make it more catchy and attractive</p>
+            <h4 class="tech">Technologies used: HTML5,Bootstrap,css3</h4>
+            <a href="https://sudhirkumarojhaa.github.io/india/">Website</a>
           </div>
         </div>
         <div class="col-md-12">
@@ -97,7 +110,7 @@
               A user can control his spaceship using spacebar and avoid spaceships to continue his journey for as long as
               he wants.</p>
             <h4 class="tech">Technologies used: HTML , CSS , jQuery, JavaScript</h4>
-            <a href="https://sudhirkumarojhaa.github.io/Space-war/"></a>
+            <a href="https://sudhirkumarojhaa.github.io/Space-war/">Website</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -106,9 +119,10 @@
           </div>
           <div class="caption">
             <h1 class="project-title">StayTuned App</h1>
-            <p>This project was based on dynamic API fetching for daily news on device, which can be consumed to view current news and stay updated with the world.It also has a adding notes feature which helps students who are preparing for exams to make notes while they read news. It comes handy for both purposes at the same time</p>
+            <p>This project was based on dynamic API fetching for daily news on device, which can be consumed to view current
+              news and stay updated with the world.It also has a adding notes feature which helps students who are preparing
+              for exams to make notes while they read news. It comes handy for both purposes at the same time</p>
             <h4 class="tech">Technologies used: React Native, Google News api</h4>
-            <a href=""></a>
           </div>
         </div>
         <div class="col-md-6">
@@ -130,7 +144,7 @@
 
   <!-- section others starts here -->
   <section class="others ">
-    <div class="others-grid" data-sb="bounceInLeft" data-sb-hide="fadeOutUp">
+    <div class="others-grid">
       <div class="container">
         <h2 class="title">other stuff</h2>
         <p>These are some of my work I do in free time , mostly book cover designs , template and logo designinig all built
@@ -168,11 +182,11 @@
   <!-- connect section starts here -->
 
   <section class="connect ">
-    <div class="connect-grid" data-sb="bounceInDown" data-sb-hide="fadeOutUp">
+    <h2 class="title">Get in touch</h2>
+    <div class="connect-grid">
       <div class="container">
-        <h2 class="title">Get in touch</h2>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 col-xs-3">
             <a href="https://kissoftheink.blogspot.in/">
               <div class="thumbnail">
               </div>
@@ -181,7 +195,7 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-xs-3">
             <a href="https://github.com/sudhirkumarojhaa">
               <div class="thumbnail">
               </div>
@@ -190,7 +204,7 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-xs-3">
             <a href="https://www.instagram.com/navigatorkumar/">
               <div class="thumbnail">
               </div>
@@ -199,7 +213,7 @@
               </div>
             </a>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-xs-3">
             <a href="href=" mailto:sudhirkumarojhaa@gmail.com "">
               <div class="thumbnail">
               </div>
