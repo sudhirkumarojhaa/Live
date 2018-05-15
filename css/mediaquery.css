@@ -28,4 +28,8 @@
   .copyright {
     padding: 15px 5px;
   }
+  .banner-content .name {
+     font-size: 60px;
+     margin-top: 10px;
+  }
 }
