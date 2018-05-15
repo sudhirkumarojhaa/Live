@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" type="image/x-icon" href="img/fav.ico">
+  <link href="https://fonts.googleapis.com/css?family=Arizonia|Kaushan+Script|Lakki+Reddy|Mr+Bedfort|Pinyon+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
   <title>Front-End Developer</title>
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/story.css">
@@ -14,79 +16,86 @@
   <link rel="stylesheet" href="css/mediaquery.css">
 </head>
 
+
+
+
 <body>
   <div class="splash">
     <div class="loader">
       <img src="img/gear.gif">
+      <div id="div1"></div>
     </div>
+    <span id="count" class="count"></span>
   </div>
-  <section class="banner">
-    <div class="banner-content">
-      <h1 class="name">sudhir kumar</h1>
-      <h2 class="sub-title">Front End Developer /
-        <span class="colors theme-color"> Designer</span>
-      </h2>
-      <img src="img/header.png" alt=" banner-footer">
-    </div>
-    <img src="img/wave2.png" alt="" class="wave">
-  </section>
-
-  <!-- banner ends -->
-
-
-  <section class="portfolio ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="img/p.png" alt="">
-        </div>
-        <div class="col-md-6">
-          <img src="img/ass.png" alt="">
-        </div>
+  <!--  splash screen ends here -->
+  <div class="databox">
+    <section class="banner">
+      <div class="banner-content">
+        <img src="img/developer.png" alt="" class="developer">
+        <h1 class="name">Sudhir Kumar</h1>
+        <h2 class="sub-title">Front End Developer /
+          <span class="colors theme-color"> Designer</span>
+        </h2>
+        <img src="img/header.png" alt=" banner-footer">
       </div>
-    </div>
+      <img src="img/wave.png" alt="" class="wave">
+    </section>
 
-  </section>
+    <!-- banner ends here -->
 
-  <!-- skill section starts here -->
 
-  <section class="skills container">
-    <div class="portfolio-content" data-sb="bounceInRight" data-sb-hide="fadeOutUp">
-      <h2 class="title">Skills</h2>
-    </div>
-    <div class="container sb-effect-displayed animated bounceInDown" data-sb="bounceInDown" data-sb-hide="fadeOutUp">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="thumbnail">
-            <i class="far fa-lightbulb icon"></i>
-            <ul class="list">
-              <li>Web/Hybrid Apps Development</li>
-            </ul>
+    <section class="portfolio ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/desktop.png" alt="">
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="thumbnail">
-            <i class="fas fa-code icon"></i>
-            <ul class="list">
-              <li>HTML5/CSS3</li>
-              <li>jQuery</li>
-              <li>JavaScript</li>
-              <li>React Native</li>
-            </ul>
+          <div class="col-md-6">
+            <img src="img/hybrid.png" alt="">
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!--portfolio ends here -->
 
 
-  <section class="projects container">
-    <div class="portfolio-content" data-sb="bounceInRight" data-sb-hide="fadeOutUp">
-      <h2 class="title">Projects</h2>
-      <p>Below you can see some projects I've been working on lately. I divide each project into four follow-up areas: comprehensive
-        research, wireframing, design &amp; development. This process allows me to create great product with client goals&nbsp;in&nbsp;mind.</p>
-    </div>
-    <div class="container-fluid">
+    <section class="skills container">
+      <div class="portfolio-content" data-sb="bounceInRight" data-sb-hide="fadeOutUp">
+        <h2 class="title">Skills</h2>
+      </div>
+      <div class="container sb-effect-displayed animated bounceInDown" data-sb="bounceInDown" data-sb-hide="fadeOutUp">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <i class="far fa-lightbulb icon"></i>
+              <ul class="list">
+                <li>Web/Hybrid Apps Development</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <i class="fas fa-code icon"></i>
+              <ul class="list">
+                <li>HTML5/CSS3</li>
+                <li>jQuery</li>
+                <li>JavaScript</li>
+                <li>React Native</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill section ends here -->
+    <section class="projects container">
+      <div class="portfolio-content" data-sb="bounceInRight" data-sb-hide="fadeOutUp">
+        <h2 class="title">Projects</h2>
+        <p>Below you can see some projects I've been working on lately. I divide each project into four follow-up areas: comprehensive
+          research, wireframing, design &amp; development. This process allows me to create great product with client goals&nbsp;in&nbsp;mind.</p>
+      </div>
       <div class="row">
         <div class="col-md-12">
           <div class="thumbnail">
@@ -97,7 +106,7 @@
             <p>This project was a one page website template buit using bootstrap and HTML 5 , implemented a video tag and animation
               to make it more catchy and attractive</p>
             <h4 class="tech">Technologies used: HTML5,Bootstrap,css3</h4>
-            <a href="https://sudhirkumarojhaa.github.io/india/">Website</a>
+            <a href="https://sudhirkumarojhaa.github.io/india/">Explore</a>
           </div>
         </div>
         <div class="col-md-12">
@@ -108,9 +117,10 @@
             <h1 class="project-title">Space War</h1>
             <p>Space war is a small game built using JavaScript. This was my first attempt for developing a game using JavaScript.
               A user can control his spaceship using spacebar and avoid spaceships to continue his journey for as long as
-              he wants.</p>
+              he wants.
+            </p>
             <h4 class="tech">Technologies used: HTML , CSS , jQuery, JavaScript</h4>
-            <a href="https://sudhirkumarojhaa.github.io/Space-war/">Website</a>
+            <a href="https://sudhirkumarojhaa.github.io/Space-war/">Explore</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -139,123 +149,116 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!--Project section ends here -->
 
-  <!-- section others starts here -->
-  <section class="others ">
-    <div class="others-grid">
-      <div class="container">
-        <h2 class="title">other stuff</h2>
-        <p>These are some of my work I do in free time , mostly book cover designs , template and logo designinig all built
-          using HTML and CSS.</p>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="thumbnail">
-              <img src="./img/ladakh.png" alt="">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="thumbnail">
-              <img src="./img/dark.png" alt="">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="thumbnail">
-              <img src="./img/trust.png" alt="">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="thumbnail">
-              <img src="./img/arms.png" alt="">
-            </div>
-          </div>
-          <!-- <div class="col-md-3"><img src="img/logo1.jpg" alt=""></div>
-          <div class="col-md-3"><img src="img/logo2.jpg" alt=""></div>
-          <div class="col-md-3"><img src="img/logo3.jpg" alt=""></div>
-          <div class="col-md-3"><img src="img/logo4.jpg" alt=""></div> -->
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- connect section starts here -->
-
-  <section class="connect ">
-    <h2 class="title">Get in touch</h2>
-    <div class="connect-grid">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-xs-3">
-            <a href="https://kissoftheink.blogspot.in/">
+    <section class="others ">
+      <div class="others-grid">
+        <div class="container">
+          <h2 class="title">other stuff</h2>
+          <p>These are some of my work I do in free time , mostly book cover designs , template and logo designinig all built
+            using HTML and CSS.</p>
+          <div class="row">
+            <div class="col-md-6">
               <div class="thumbnail">
+                <img src="./img/ladakh.png" alt="">
               </div>
-              <div class="caption">
-                Blog
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 col-xs-3">
-            <a href="https://github.com/sudhirkumarojhaa">
+            </div>
+            <div class="col-md-6">
               <div class="thumbnail">
+                <img src="./img/dark.png" alt="">
               </div>
-              <div class="caption">
-                Github
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 col-xs-3">
-            <a href="https://www.instagram.com/navigatorkumar/">
+            </div>
+            <div class="col-md-6">
               <div class="thumbnail">
+                <img src="./img/trust.png" alt="">
               </div>
-              <div class="caption">
-                instagram
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3 col-xs-3">
-            <a href="href=" mailto:sudhirkumarojhaa@gmail.com "">
+            </div>
+            <div class="col-md-6">
               <div class="thumbnail">
+                <img src="./img/arms.png" alt="">
               </div>
-              <div class="caption">
-                contact
-              </div>
-            </a>
+            </div>
+            <!-- <div class="col-md-3"><img src="img/logo1.jpg" alt=""></div>
+            <div class="col-md-3"><img src="img/logo2.jpg" alt=""></div>
+            <div class="col-md-3"><img src="img/logo3.jpg" alt=""></div>
+            <div class="col-md-3"><img src="img/logo4.jpg" alt=""></div> -->
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- footer section starts here -->
+    <!-- others ends here -->
 
-  <footer>
-    <div class="footer-content"></div>
-    <div class="copyright">
-      <p>Copyright &copy; 2018</p>
-      <div class="social-icons">
-        <a href="">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://github.com/sudhirkumarojhaa">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="https://www.instagram.com/navigatorkumar/">
-          <i class="fab fa-instagram"></i>
-        </a>
+    <!-- connect section starts here -->
+
+    <section class="connect ">
+      <h2 class="title">Get in touch</h2>
+      <div class="connect-grid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-3">
+              <a href="https://kissoftheink.blogspot.in/">
+                <div class="thumbnail">
+                </div>
+                <div class="caption">
+                  Blog
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-xs-3">
+              <a href="https://github.com/sudhirkumarojhaa">
+                <div class="thumbnail">
+                </div>
+                <div class="caption">
+                  Github
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-xs-3">
+              <a href="https://www.instagram.com/navigatorkumar/">
+                <div class="thumbnail">
+                </div>
+                <div class="caption">
+                  instagram
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-xs-3">
+              <a href="href=" mailto:sudhirkumarojhaa@gmail.com "">
+                <div class="thumbnail">
+                </div>
+                <div class="caption">
+                  contact
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- javascript section starts here -->
+    <!-- footer section starts here -->
 
-  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
-    crossorigin="anonymous"></script>
-  <script src="js/jquery.js"></script>
-  <script src="js/story.js"></script>
-  <script src="js/custom.js"></script>
+    <footer>
+      <div class="copyright">
+        <p>Copyright &copy; 2018</p>
+        <p>designed and maintained by sudhir</p>
+      </div>
+    </footer>
 
-  <!-- javscript section ends here -->
+    <!-- javascript section starts here -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+      crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/story.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- javscript section ends here -->
+  </div>
+
 </body>
 
 </html>

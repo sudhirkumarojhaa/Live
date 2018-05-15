@@ -1,32 +1,13 @@
-@font-face {
-  font-family: "Desire";
-  src: url(../fonts/delight.woff)
-}
+/* global css */
 
-
-.splash {
-  background-color: tomato;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.loader {
-  width: 140px;
-  height: 160px;
+body {
+  background-color: #fff
 }
 
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-body {
-  background-color: #fff
 }
 
 ul {
@@ -48,6 +29,37 @@ a {
   text-decoration: none
 }
 
+section {
+  padding: 30px 0
+}
+
+/* splash screen css */
+
+.splash {
+  background-color: tomato;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.loader {
+  width: 140px;
+  height: 160px;
+}
+
+.count {
+  color: #fff;
+  font-family: 'Monoton', cursive;
+  text-align: center;
+  font-size: 90px;
+}
+
+/* banner section css starts here */
+
 .banner {
   height: 100vh;
   position: relative;
@@ -56,7 +68,7 @@ a {
   background-color: #000;
   align-items: center;
   text-align: center;
-   z-index: 100;
+  z-index: 100;
 }
 
 .wave {
@@ -64,9 +76,8 @@ a {
   bottom: -100px;
   left: 0;
   height: 200px;
- z-index: -100;
+  z-index: -100;
 }
-
 
 .banner-content {
   font-weight: 700;
@@ -74,35 +85,50 @@ a {
 }
 
 .banner-content .name {
-  font-family: "desire";
+  animation: font-name 45s ease-in-out infinite;
   font-size: 80px;
   text-align: center;
   color: #fff;
-  margin-top: 400px;
+  margin-top: 40px;
 }
 
-.title {
-  font-size: 90px;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  text-transform: uppercase;
-  background: url('../img/w.jpeg') center no-repeat;
-  margin: 50px 0;
-  background-size: contain;
+@keyframes font-name {
+  0% {
+    color: rgb(255, 147, 147);
+    font-family: 'Mr Bedfort', cursive;
+  }
+  25% {
+    color: yellow;
+    font-family: 'Lakki Reddy', cursive;
+  }
+  50% {
+    color: rgb(182, 182, 241);
+    font-family: 'Arizonia', cursive;
+  }
+  75% {
+    color: rgb(255, 208, 132);
+    font-family: 'Kaushan Script', cursive;
+  }
+  100% {
+    color: rgb(114, 236, 114);
+    font-family: 'Pinyon Script', cursive;
+  }
 }
+
+.developer {
+  width: 250px;
+  height: 250px;
+}
+
+
 
 .sub-title {
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
-  margin-bottom: 30vh;
+  margin-bottom: 25vh;
 }
 
-
-.text-img {
-  width: 600px;
-}
 .colors {
   background-clip: text;
   text-fill-color: transparent;
@@ -120,42 +146,24 @@ a {
   -webkit-background-clip: text
 }
 
+/* portfolio section css */
 
-
-@keyframes anim {
-  0% {
-    transform: scale(1)
-  }
-  30% {
-    transform: scale(1)
-  }
-  40% {
-    transform: scale(1.18)
-  }
-  50% {
-    transform: scale(1)
-  }
-  60% {
-    transform: scale(1)
-  }
-  70% {
-    transform: scale(1.25)
-  }
-  80% {
-    transform: scale(1)
-  }
-  100% {
-    transform: scale(1)
-  }
-}
-
-section {
-  padding: 30px 0
+.title {
+  font-size: 90px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-transform: uppercase;
+  background: url('../img/title-bg.jpeg') center no-repeat;
+  margin: 50px 0;
+  background-size: contain;
 }
 
 .portfolio {
   margin: 200px 0;
 }
+
+/* others section css */
 
 .others-grid .thumbnail {
   margin: 30px;
@@ -166,6 +174,8 @@ section {
 .others-grid .thumbnail:hover {
   transform: translate(0, -10px);
 }
+
+/* skills section css */
 
 .skills .thumbnail {
   display: flex;
@@ -189,7 +199,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background:#000;
+  background: #000;
   color: #fff;
   visibility: hidden;
   text-align: center;
@@ -207,6 +217,8 @@ section {
   color: #00c2eb
 }
 
+/* projects css section */
+
 .projects .row {
   margin: 30px 0
 }
@@ -222,30 +234,25 @@ section {
   margin: 2px;
 }
 
+.tech {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(0, 40, 86);
+  font-weight: bold;
+}
+
+.projects .caption a {
+  color: orange;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
 .projects .thumbnail {
   padding: 10px;
   box-shadow: 0 0 20px #999;
 }
 
-.social-icons a {
-  font-size: 20px;
-  color: #0c9;
-  margin: 10px 0;
-  width: 40px;
-  height: 40px;
-  margin: 3px;
-  border: 2px solid #0c9;
-  text-align: center;
-  padding: 5px 20px;
-}
-
-.social-icons a:hover {
-  text-decoration: none;
-  color: #000;
-  background-color: #0c9;
-  box-shadow: 2px 2px 11px rgba(201, 52, 52, 0)
-}
-
+/* footer section css */
 
 .copyright {
   font-size: 12px;
@@ -254,16 +261,23 @@ section {
   align-items: center;
   font-weight: bold;
   background-color: #000;
-  color: #0c9;
-  padding: 20px 40px;
+  padding: 20px;
+  text-align: center;
 }
 
 .copyright p {
   margin: 0;
+  text-align: center;
+  color: #999;
+  font-size: 10px;
+  text-transform: capitalize;
 }
 
+/* connect css */
+
 .connect-grid {
-  background: url(../img/ss3.png) no-repeat center fixed;
+  background: url(../img/footer.png);
+  background-size: cover;
 }
 
 .connect .thumbnail {
@@ -280,12 +294,6 @@ section {
 .connect .thumbnail:hover {
   transform: translate(0, -10px);
   transition: all 1.4s;
-}
-
-.tech {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: rgb(0, 40, 86);
 }
 
 .connect .caption {
