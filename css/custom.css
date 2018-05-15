@@ -88,6 +88,8 @@ section {
   animation: font-name 45s ease-in-out infinite;
   font-size: 80px;
   text-align: center;
+  font-family: 'Kaushan Script',
+  cursive;
   color: #fff;
   margin-top: 40px;
 }
@@ -95,23 +97,18 @@ section {
 @keyframes font-name {
   0% {
     color: rgb(255, 147, 147);
-    font-family: 'Mr Bedfort', cursive;
   }
   25% {
     color: yellow;
-    font-family: 'Lakki Reddy', cursive;
   }
   50% {
     color: rgb(182, 182, 241);
-    font-family: 'Arizonia', cursive;
   }
   75% {
     color: rgb(255, 208, 132);
-    font-family: 'Kaushan Script', cursive;
   }
   100% {
     color: rgb(114, 236, 114);
-    font-family: 'Pinyon Script', cursive;
   }
 }
 
