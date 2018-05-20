@@ -2,6 +2,32 @@
   p {
     text-align: justify;
   }
+  .banner-p {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .banner-content .name {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .banner {
+    background-position: center;
+  }
+
+  .sub-title {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .projects .caption {
     margin: 0;
     padding: 20px 0;
@@ -30,9 +56,5 @@
   }
   .copyright {
     padding: 15px 5px;
-  }
-  .banner-content .name {
-     font-size: 60px;
-     margin-top: 10px;
   }
 }
