@@ -63,7 +63,7 @@ section {
 .banner {
     height: 100vh;
     position: relative;
-    background: url('../img/n.png') no-repeat;
+    background: url('../img/banner.png') no-repeat;
     background-size: cover;
     z-index: 100;
 }
@@ -85,6 +85,7 @@ section {
     font-size: 80px;
     color: #000000;
     margin-top: 20px;
+    margin-left: 20px;
     font-family: 'Fredericka the Great', cursive;
 }
 
