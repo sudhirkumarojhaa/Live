@@ -147,20 +147,18 @@ section {
     margin: 50px 0;
 }
 
-.inline {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-}
+
 
 /* others section css */
+
+.others-grid .row {
+    justify-content: center;
+}
 
 .others-grid .thumbnail {
     margin: 30px;
     box-shadow: 0 2px 15px #999;
     transition: all .3s ease-out;
-    height: 700px;
-    border-left: 30px solid #0c223e;
 }
 
 .others-grid .thumbnail:hover {
@@ -227,7 +225,7 @@ section {
 .projects .caption {
     padding: 15px;
     margin: 40px 0;
-    border-bottom: 20px solid #999;
+    border-bottom: 10px solid #777;
 }
 
 .tech {
